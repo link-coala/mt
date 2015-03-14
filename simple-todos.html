@@ -1,28 +1,21 @@
 <head>
-  <header>
-  <title>Todo List</title>
-  <form class="new-task">
-    <input type="text" name="text" placeholder="Type to add new tasks" />
-  </form>
-  </header>
+<title>Todo List</title>
 </head>
-
-
 <body>
-  <div class="container">
-    <header>
-      <h1>Todo List</h1>
-    </header>
-
-    <ul>
-      {{#each tasks}}
-        {{> task}}
-      {{/each}}
-    </ul>
-  </div>
-   
+<div class="container">
+<header>
+<h1>Todo List</h1>
+<form class="new-task">
+<input type="text" name="text" placeholder="Type to add new tasks" />
+</form>
+</header>
+<ul>
+{{#each tasks}}
+{{> task}}
+{{/each}}
+</ul>
+</div>
 </body>
-
 <template name="task">
-  <li>{{text}}</li>
+<li>{{text}}</li>
 </template>
